@@ -4,52 +4,82 @@
   <meta charset="UTF-8" />
   <title>About Us - Brexy Coffee</title>
   <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <h1>Brexy Coffee</h1>
+    <div class="logo">☕ Brexy Coffee Shop</div>
     <nav>
       <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
+      <a href="about.html" class="active">About Us</a>
       <a href="menu.html">Menu</a>
       <a href="contact.html">Contact</a>
     </nav>
   </header>
 
   <main>
-    <h2>Welcome to Brexy Coffee</h2>
-    <p>Where passion meets perfection in every cup.</p>
-
-    <section>
-      <h3>Our Vision</h3>
-      <p>To be a leading community-focused coffee destination that inspires connection, creativity, and comfort—one cup at a time.</p>
-
-      <h3>Our Mission</h3>
-      <ul>
-        <li>To craft exceptional coffee using ethically sourced beans and sustainable practices.</li>
-        <li>To foster a welcoming space that encourages community and creativity.</li>
-        <li>To elevate the coffee experience with passion and authenticity.</li>
-      </ul>
-
-      <h3>Our Concept</h3>
-      <ul>
-        <li><strong>Quality First:</strong> Premium beans brewed with care.</li>
-        <li><strong>Comfort & Style:</strong> Interiors that feel like home.</li>
-        <li><strong>Community Vibes:</strong> Local events and seasonal specials.</li>
-      </ul>
+    <!-- Section 1: Intro -->
+    <section class="about-intro">
+      <div class="about-text">
+        <h2>Welcome to Brexy Coffee</h2>
+        <p>Where passion meets perfection in every cup.</p>
+        <p>Founded with a love for quality coffee and community connection, Brexy is more than just a coffee shop — it's a space designed for conversation, creativity, and comfort. We believe in delivering an exceptional coffee experience through ethically sourced beans, expertly crafted beverages, and a welcoming atmosphere that feels like a second home.</p>
+        <p>At Brexy, every detail matters — from the way we brew your espresso to the smile that greets you at the door. Whether you're grabbing your daily pick-me-up or settling in for a relaxing break, we’re here to serve coffee that inspires.</p>
+      </div>
+      <div class="about-img">
+        <img src="images/espresso-machine.jpg" alt="Espresso machine" />
+      </div>
     </section>
 
-    <section>
-      <h3>Best Quality Beans</h3>
-      <article>
-        <h4>BREXY RESERVE ARABICA</h4>
-        <p>Sourced from Ethiopia's Yirgacheffe region, ideal for pour-over and cold brew lovers.</p>
-      </article>
+    <!-- Section 2: Vision and Mission -->
+    <section class="about-mission">
+      <div class="mission-img">
+        <img src="images/latte-top.jpg" alt="Latte art" />
+      </div>
+      <div class="mission-text">
+        <h3>Our Vision</h3>
+        <p>To be a leading community-focused coffee destination that inspires moments of connection, creativity, and comfort — one cup at a time.</p>
 
-      <article>
-        <h4>VELVET CREMA BLEND</h4>
-        <p>A luscious espresso blend combining Colombian brightness with Brazilian depth.</p>
-      </article>
+        <h3>Our Mission</h3>
+        <ul>
+          <li>To craft exceptional coffee using ethically sourced beans and sustainable practices.</li>
+          <li>To foster a welcoming space that encourages community, creativity, and relaxation.</li>
+          <li>To continuously innovate and elevate the coffee experience through passion, precision, and authenticity.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Section 3: Our Concept -->
+    <section class="about-concept">
+      <div class="concept-text">
+        <h3>Our Concept is Simple</h3>
+        <ul>
+          <li><strong>Quality First</strong> — We source premium beans and brew with care to highlight every flavor note.</li>
+          <li><strong>Comfort & Style</strong> — Thoughtfully designed interiors that make you feel at home, whether you're working, meeting, or relaxing.</li>
+          <li><strong>Community Vibes</strong> — Local events, art features, and seasonal specials that reflect the spirit of our neighborhood.</li>
+        </ul>
+      </div>
+      <div class="concept-gallery">
+        <img src="images/iced-coffee.jpg" alt="Iced coffee pour" />
+        <img src="images/barista-pour.jpg" alt="Barista pouring milk" />
+      </div>
+    </section>
+
+    <!-- Section 4: Best Beans -->
+    <section class="best-beans">
+      <h2>Best Quality Bean</h2>
+      <div class="bean-gallery">
+        <div class="bean-item">
+          <img src="images/arabica.jpg" alt="Arabica beans" />
+          <h4>BREXY RESERVE ARABICA</h4>
+          <p>Sourced from the high elevations of Yirgacheffe, Ethiopia, this single-origin Arabica offers a refined and complex flavor profile. Ideal for drip, pour-over, and cold brew enthusiasts.</p>
+        </div>
+        <div class="bean-item">
+          <img src="images/velvet-crema.jpg" alt="Crema beans" />
+          <h4>VELVET CREMA BLEND</h4>
+          <p>A balanced blend perfect for espresso-based drinks. Velvet Crema combines Colombian brightness with Brazilian depth to create a luscious and comforting cup.</p>
+        </div>
+      </div>
     </section>
   </main>
 
@@ -57,4 +87,5 @@
     <p>© 2025 Brexy Coffee</p>
   </footer>
 </body>
-</html>
+  </html>
+  
