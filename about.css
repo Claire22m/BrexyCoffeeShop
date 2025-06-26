@@ -1,0 +1,245 @@
+/* === Base Reset === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: #fff;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* === Header === */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+nav a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: #222;
+  font-weight: 600;
+  font-size: 1rem;
+  position: relative;
+}
+
+nav a.active,
+nav a:hover {
+  color: #000;
+}
+
+nav a.active::after {
+  content: '';
+  display: block;
+  height: 2px;
+  background-color: #000;
+  margin-top: 4px;
+}
+
+/* === Main Content === */
+main {
+  padding: 40px 60px;
+}
+
+/* === About Intro Section === */
+.about-intro {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.about-text p {
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.about-img {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-img img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* === Vision & Mission Section === */
+.about-mission {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: flex-start;
+  margin-bottom: 60px;
+}
+
+.mission-img {
+  flex: 1;
+  min-width: 300px;
+}
+
+.mission-img img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.mission-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.mission-text h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.mission-text ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.mission-text li {
+  margin-bottom: 10px;
+}
+
+/* === Concept Section === */
+.about-concept {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: flex-start;
+  margin-bottom: 60px;
+}
+
+.concept-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.concept-text h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.concept-text ul {
+  list-style: none;
+}
+
+.concept-text li {
+  margin-bottom: 10px;
+}
+
+.concept-text strong {
+  font-weight: bold;
+}
+
+.concept-gallery {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  min-width: 300px;
+}
+
+.concept-gallery img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* === Beans Section === */
+.best-beans {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.best-beans h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.bean-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.bean-item {
+  max-width: 300px;
+  text-align: center;
+}
+
+.bean-item img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.bean-item h4 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.bean-item p {
+  font-size: 0.95rem;
+  color: #444;
+}
+
+/* === Footer === */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #fafafa;
+  color: #555;
+  font-size: 0.9rem;
+  border-top: 1px solid #eee;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  nav a {
+    margin-left: 15px;
+  }
+
+  .about-intro,
+  .about-mission,
+  .about-concept {
+    flex-direction: column;
+  }
+
+  .concept-gallery {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
