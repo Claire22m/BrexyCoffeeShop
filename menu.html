@@ -4,38 +4,61 @@
   <meta charset="UTF-8" />
   <title>Menu - Brexy Coffee</title>
   <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <h1>Brexy Coffee</h1>
+    <div class="logo">☕ Brexy Coffee Shop</div>
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About Us</a>
-      <a href="menu.html">Menu</a>
+      <a href="menu.html" class="active">Menu</a>
       <a href="contact.html">Contact</a>
     </nav>
   </header>
 
-  <main>
+  <main class="menu-page">
     <h2>Our Menu</h2>
 
-    <section>
-      <h3>Coffee</h3>
-      <ul>
-        <li>Latte</li>
-        <li>Coffee Foam</li>
-        <li>Latte Macchiato</li>
-        <li>Iced Coffee</li>
-      </ul>
+    <!-- Coffee Section -->
+    <section class="menu-section">
+      <div class="menu-grid">
+        <div class="menu-item">
+          <img src="images/coffee-latte.jpg" alt="Coffee Latte" />
+          <p>COFFEE LATTE</p>
+        </div>
+        <div class="menu-item">
+          <img src="images/coffee-foam.jpg" alt="Coffee Foam" />
+          <p>COFFEE FOAM</p>
+        </div>
+        <div class="menu-item">
+          <img src="images/latte-macchiato.jpg" alt="Latte Macchiato" />
+          <p>LATTE MACCHIATO</p>
+        </div>
+        <div class="menu-item">
+          <img src="images/iced-coffee.jpg" alt="Iced Coffee" />
+          <p>ICED COFFEE</p>
+        </div>
+      </div>
     </section>
 
-    <section>
-      <h3>Snacks</h3>
-      <ul>
-        <li>French Fries</li>
-        <li>Mix Platter</li>
-        <li>Dessert</li>
-      </ul>
+    <!-- Snack Section -->
+    <h2>Snack</h2>
+    <section class="menu-section">
+      <div class="menu-grid">
+        <div class="menu-item">
+          <img src="images/french-fries.jpg" alt="French Fries" />
+          <p>FRENCH FRIES</p>
+        </div>
+        <div class="menu-item">
+          <img src="images/mix-platter.jpg" alt="Mix Platter" />
+          <p>MIX PLATTER</p>
+        </div>
+        <div class="menu-item">
+          <img src="images/dessert.jpg" alt="Dessert" />
+          <p>DESSERT</p>
+        </div>
+      </div>
     </section>
   </main>
 
